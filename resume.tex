@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Koushik}{Mondal}{ \urlstyle{same}\url{http://koushikmondal.in} \\
+\href{mailto:mondalkoushik508@gmail.com}{mondalkoushik508@gmail.com} | +91 8967 208 403
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming and Tools}
+\location{Programming Languages:}
+Javascript \textbullet{}   Typescript \textbullet{}  C++ \textbullet{} Python\\
+\location{Tools:}
+Angular higher version \textbullet{} NodeJS \textbullet{} Express \textbullet{} Nest.JS \textbullet{}  Mongo DB \textbullet{} AWS-EC2, Lambda, S3, IAM  \textbullet{} Distributed Storage \\
+\location{IDE:}
+VS Studio \textbullet{} Eclipse \textbullet{} Sublime text
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CODING PROFILE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coding Profile} 
+Hackerrank:// \href{https://www.hackerrank.com/mondalkoushik508}{\custombold{mondalkoushik508}} 5 Star \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/koushikxoro}{\custombold{koushikxoro}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/koushik-mondal-b7a35312b/}{\custombold{koushikmondal}} \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{JALPAIGURI GOVERNMENT ENGINEERING COLLEGE}
+\descript{B. Tech in Information Technology}
+\location{2020 | West Bengal \\ Cum. GPA: 8.67 / 10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{COURSEWORK}
+\subsection{Undergraduate}
+Database Systems \\
+Operating Systems \\
+Computer Networks \\
+Object Oriented System Development \\
+Software Engineering \\
+Design and Analysis of Algorithms \\
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Infosys}
+\descript{| Specialist Programmer }
+\location{ Jan 2022 – Present | Hyderabad, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on a full stack(MEAN) application for Infosys's one of the top client.
+\item Setup the project architecture for many modules.
+\item Used concepts like lazy loading, server side pagination for smooth rendering of a heavy page.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Infosys}
+\descript{| Digital Specialist Engineer }
+\location{Sep 2020 – Dec 2021 | Hyderabad, IN}
+\begin{tightemize}
+\item Developing the backend of client's project which is based out of Node.js
+\item Documented the APIs using swagger.
+\item Analyzed the cause of slowness of a application and added indexes, reduced document size which improved performance of client app.
+\item Integrated backend with AWS S3 for storing and downloading client data, with proper authentication using CSRF token.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BHEL}
+\descript{| Web Development Intern}
+\location{Dec 2019 – Mar 2020 | Kolkata, IN}
+\begin{tightemize}
+\item Developing and maintaining a complete full fledged website for client representation of workable prototypes using modern edge technologies.
+\item Used PHP, HTML, CSS, Bootstrap for this project.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{GENRAIT}
+\descript{| US Based freelance project}
+\begin{tightemize}
+\item Developed high speed data transmission solution with multiple and variable concurrency.
+\item Developed Angular frontend with concepts like lazy loading, pagination.
+\item Worked with many third party distributed storage for data migration.
+\item Worked on EC2, AWS code deploy.
+\item Right now, this project is in the staged phase.
+\end{tightemize}
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Community Services
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Community Services} 
+% \begin{tabular}{rll}
+% 	  	 & Community Organizer  & AI Saturdays Hyderabad\\
+% 	     & Volunteer   & PyCon India\\
+% 	     & Content Curator  & Everipedia.org (First Blockchain Encyclopedia)\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Courses and Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications and Skill tags} 
+
+\begin{tabular}{rll}
+2021 	& Certified Cloud Practioner    & AWS\\
+2020   & Certified Angular Developer   & Infosys\\
+2021   & Certified Node.Js Developer  & Infosys\\
+2022    & Digital Interaction Professional & Infosys\\
+
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}
+
+\documentclass[]{article}
+
